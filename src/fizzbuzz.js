@@ -1,4 +1,4 @@
-function Fizzbuzz (){
+function Fizzbuzz() {
 };
  Fizzbuzz.prototype.isDivisibleByThree = function(number) {
     if (number%3 == 0) {
@@ -6,4 +6,12 @@ function Fizzbuzz (){
   } else {
     return number;
   }
+ };
+
+ Fizzbuzz.prototype.isDivisibleByFive = function(number) {
+   if (number%5 == 0) {
+     return "Buzz";
+   } else {
+     return number;
+   }
  };
